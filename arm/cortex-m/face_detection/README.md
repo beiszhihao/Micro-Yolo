@@ -7,11 +7,16 @@ This project is to demonstrate the transplantation of `YOLO` neural network mode
 ## Effect Demonstration
 The following is a real machine demonstration (`STM32F746G_DISCO`)
 
-<p align="center">
-  <img alt="demo" src="./img/1.jpg">
+(demo1)
+
+<p align="left">
+  <img alt="demo" src="./img/1.jpg" width=500 height=256>
 </p>
-<p align="center">
-  <img alt="demo" src="./img/2.jpg">
+
+(demo2)
+
+<p align="left">
+  <img alt="demo" src="./img/2.jpg"  width=500 height=256>
 </p>
 
 At the same time, the lower computer will also output the coordinates of the box, which are respectively x1, y1 (upper left corner), x2, y2 (lower left corner)
@@ -55,8 +60,8 @@ The configuration and use of openocd are ported to `zephyr rtos`
 -c shutdown
 ```
 if the burning is successful, you should see the following picture:
-<p align="center">
-  <img alt="test" src="./img/test.jpg">
+<p align="left">
+  <img alt="test" src="./img/test.jpg"  width=500 height=256>
 </p>
 
 ### Build Applications
@@ -64,7 +69,15 @@ The application supports Windows and Linux. If you need to install `opencv` unde
 ```bash
 sudo apt install libopencv-video-dev
 ```
-There is no need to install under Windows. I have transplanted the opencv library on Windows in lib and configured it in cmake
+There is no need to install under `Windows`. I have transplanted the `opencv` library on `Windows` in lib and configured it in cmake
+
+Because the opencv source code is large, I haven't uploaded it to the warehouse, so I need to make some simple configurations
+
+You can download opencv here:
+
+[download opencv](https://github.com/beiszhihao/micro-yolo/releases/download/upper_lib/upper_lib.zip)
+
+After downloading, unzip the compressed file to the `upper file directory`
 
 compile
 ```bash
