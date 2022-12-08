@@ -51,12 +51,10 @@ The configuration and use of openocd are ported to `zephyr rtos`
 '-c init' \
 '-c targets' \
 -c 'reset halt' \
--c 'flash write_image erase \
-./build/stm32f746g_disco.hex' \
+-c 'flash write_image erase ./build/stm32f746g_disco.hex' \
 -c 'reset halt' \
--c 'verify_image \
-./build/stm32f746g_disco.hex' -c \
-'reset run' \
+-c 'verify_image ./build/stm32f746g_disco.hex' \
+-c 'reset run' \
 -c shutdown
 ```
 if the burning is successful, you should see the following picture:
