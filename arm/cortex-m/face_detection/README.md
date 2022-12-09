@@ -99,7 +99,7 @@ upper -i face1.jpg -w 56 -h 56 -f rgb565 -d /dev/ttyACM0 -b 115200
 ```
 Of course, you can also use the camera to predict AI
 ```bash
-upper -i 0 -w 56 -h 56 -f rgb 565 -d /dev/ttyACM0 -b 115200
+upper -i 0 -w 56 -h 56 -f rgb 565 -d /dev/ttyACM0 -b 115200 -c
 ```
 If you want to check how many cameras are on the current computer, you can use `-s` to check
 ```bash
